@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <h1 class="title">Register</h1>
+  </div>
+  <div class="row justify-content-center email-field">
+    <input [(ngModel)]="firstName" placeholder="First name" />
+  </div>
+  <div class="row justify-content-center password-field">
+    <input [(ngModel)]="lastName" placeholder="Last Name" />
+  </div>
+  <div class="row justify-content-center password-field">
+    <input [(ngModel)]="email" placeholder="Email" />
+  </div>
+  <div class="row justify-content-center password-field">
+    <input [(ngModel)]="password" placeholder="Password" />
+  </div>
+  <div class="row justify-content-center login-btn">
+    <button class="btn btn-outline-info" (click)="register()">Register</button>
+  </div>
+
+</div>

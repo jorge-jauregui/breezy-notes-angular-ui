@@ -1,0 +1,104 @@
+/* NOTES LIST */
+
+div.card {
+  background-color: #3a9fbf;
+}
+
+div.card-body {
+  background-color: #348fab;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+div.card-body:hover {
+  opacity: 0.7;
+}
+
+a.edit-note:hover {
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  font-size: 14px;
+}
+
+p {
+  color: lightgray;
+  font-size: 12px;
+}
+
+button.delete {
+  border: none;
+  background: none;
+}
+
+button.delete:focus {
+  outline: none;
+}
+
+/* NOTES CREATE */ 
+
+textarea {
+  resize: none;
+  width: 100%;
+  background-color: transparent;
+  color: lightgray;
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea.title {
+  border-bottom: 1px solid lightgray;
+}
+
+textarea::-webkit-input-placeholder {
+  color: lightgray;
+}
+
+textarea:-moz-placeholder { 
+  color: lightgray;  
+}
+
+textarea::-moz-placeholder {  
+  color: lightgray;  
+}
+
+textarea:-ms-input-placeholder {
+  color: lightgray;  
+}
+
+textarea::placeholder {
+  color: lightgray;  
+} 
+
+button.new {
+  background: none;
+	color: inherit;
+  border: 1px solid white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 150px;
+  font-size: 15px;
+  color: white;
+}
+
+button.save {
+  background: none;
+	color: inherit;
+  border: 1px solid white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 150px;
+  font-size: 15px;
+  color: white;
+}
+
+

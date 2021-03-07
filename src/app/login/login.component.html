@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <h1 class="title">Login</h1>
+  </div>
+  <div class="row justify-content-center email-field">
+    <input [(ngModel)]="emailLogin" placeholder="Email" />
+  </div>
+  <div class="row justify-content-center password-field">
+    <input [(ngModel)]="passwordLogin" placeholder="Password" />
+  </div>
+  <div class="row justify-content-center login-btn">
+    <button class="btn btn-outline-info" (click)="logIn()">Log In</button>
+  </div>
+
+</div>

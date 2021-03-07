@@ -1,0 +1,28 @@
+div.container-fluid {
+  color: white;
+}
+div.title {
+  margin-top: 100px;
+  color: white;
+}
+div.svg {
+  color: white;
+}
+img {
+  width: 60%;
+  margin: auto;
+  display: block;
+  height: 200px;
+}
+
+/* button {
+} */
+
+div.login-link {
+  margin-top: 20px;
+  color: white;
+}
+
+a.login {
+  color: #c6c6c6;
+}
