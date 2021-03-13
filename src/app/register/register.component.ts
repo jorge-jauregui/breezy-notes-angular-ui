@@ -25,7 +25,6 @@ export class RegisterComponent implements OnInit {
     this.rest.checkLogin()
       .subscribe((res) => {
         if (res === true) {
-          console.log("Logged in")
           this.router.navigate(['notes'])
         }
       })

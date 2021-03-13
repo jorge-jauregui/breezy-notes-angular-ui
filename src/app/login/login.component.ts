@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit, DoCheck {
     this.rest.checkLogin()
       .subscribe((res) => {
         if (res === true) {
-          console.log("Logged in")
           this.router.navigate(['notes'])
         }
       })

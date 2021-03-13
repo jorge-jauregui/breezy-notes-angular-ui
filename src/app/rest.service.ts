@@ -29,7 +29,6 @@ export class RestService {
       .post(`${API_URL}/register`, body)
       .toPromise()
       .then((res: string) => {
-        console.log('jwt', res)
         localStorage.setItem(this.jwtKey, res)
       });
   }
@@ -43,9 +42,7 @@ export class RestService {
       .toPromise()
       .then(res => {
         localStorage.setItem(this.jwtKey, <string>res)
-        // console.log('jwt', res)
         const jwt = localStorage.getItem(this.jwtKey);
-        console.log("Log in attempt", jwt)
       });
   }
 
@@ -65,7 +62,6 @@ export class RestService {
   logOut() {
     localStorage.removeItem(this.jwtKey);
     const jwt = localStorage.getItem(this.jwtKey);
-    console.log("logged out jwt", jwt)
   }
 
   getNoteUpdateListener() {
@@ -85,7 +81,6 @@ export class RestService {
         { headers: { Authorization: `Bearer ${jwt}` }}
         )
       .subscribe((responseData) => {
-        console.log("res data", responseData)
         const id = responseData.noteId
         note.id = id;
         this.notes.push(note)
